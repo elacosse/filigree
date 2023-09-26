@@ -78,7 +78,7 @@ def check_password():
 if check_password():
     # Streamlit App
     st.title("Filigree")
-    file_buffer = st.file_uploader("Upload an audio file", type=["wav", "flac", "mp3", "mp4"])
+    file_buffer = st.file_uploader("Upload an audio file", type=["wav", "flac", "mp3", "mp4", "m4a"])
     if file_buffer is not None:
         st.write("Audio file uploaded successfully!")
         st.session_state["audio_upload"] = True
